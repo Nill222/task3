@@ -4,11 +4,18 @@ import com.project.task.entity.Station;
 import com.project.task.entity.Train;
 import com.project.task.exception.TrainException;
 import com.project.task.state.TrainState;
+import com.project.task.warehouse.Warehouse;
 
 public class ServiceState implements TrainState {
     private final Train train;
     private final Station station;
     private final Warehouse wh;
+
+    public ServiceState(Train train, Station station, Warehouse wh) {
+        this.train = train;
+        this.station = station;
+        this.wh = wh;
+    }
 
     @Override
     public Boolean process() throws TrainException {
