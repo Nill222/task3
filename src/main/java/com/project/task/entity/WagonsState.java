@@ -1,6 +1,6 @@
 package com.project.task.entity;
 
-public enum State {
+public enum WagonsState {
     LOADING,
     UNLOADING
 }
