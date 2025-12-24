@@ -28,7 +28,9 @@ public class Main {
         RailwayManager manager = RailwayManagerImpl.getInstance();
         manager.init(paths, station);
         var results = manager.processAll(trains);
-        for (var f : results) log.info("Result: {}", f.get());
+        for (var f : results) {
+            log.info("Result: {}", f.get());
+        }
         manager.shutdown();
     }
 }
