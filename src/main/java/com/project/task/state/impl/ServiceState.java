@@ -9,7 +9,6 @@ import com.project.task.state.TrainState;
 
 import java.util.concurrent.TimeUnit;
 
-import static java.lang.Thread.sleep;
 
 public class ServiceState implements TrainState {
     private final Train train;

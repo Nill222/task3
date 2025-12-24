@@ -1,7 +1,6 @@
 package com.project.task.state.impl;
 
 import com.project.task.entity.Train;
-import com.project.task.exception.TrainException;
 import com.project.task.state.TrainState;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -15,7 +14,7 @@ public class FinishedState implements TrainState {
     }
 
     @Override
-    public Boolean process() throws TrainException {
+    public Boolean process() {
         log.info("train {}", train.getName());
         return true;
     }
