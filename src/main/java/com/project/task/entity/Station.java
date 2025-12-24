@@ -26,7 +26,6 @@ public class Station {
             if(currentWagons + wagons > capacity) {
                 log.info("Station is full, train wait");
                 notFull.await();
-                throw new IllegalStateException("Station capacity exceeded");
             }
             currentWagons +=wagons;
             log.info("Station: added {} wagons. Total ={} ", currentWagons, wagons);

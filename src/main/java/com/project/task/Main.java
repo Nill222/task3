@@ -17,7 +17,7 @@ public class Main {
 
     public static void main(String[] args) throws ExecutionException, InterruptedException {
 
-        Station station = new Station(20, 5);
+        Station station = new Station(10, 0);
         List<StationPath> paths = List.of(new StationPath(1),
                 new StationPath(2));
         List<Train> trains = List.of(

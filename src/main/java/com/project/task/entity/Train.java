@@ -5,7 +5,6 @@ import com.project.task.state.TrainState;
 import com.project.task.state.impl.WaitingState;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import java.util.Map;
 
 import java.util.concurrent.Callable;
 

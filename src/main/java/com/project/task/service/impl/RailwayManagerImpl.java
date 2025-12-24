@@ -42,7 +42,7 @@ public class RailwayManagerImpl implements RailwayManager {
 
     @Override
     public Boolean handleTrain(Train train) throws TrainException {
-        StationPath path = stationPath.get((int)(Math.random() * stationPath.size()));
+        StationPath path = stationPath.get((int)(Math.random() * stationPath.size())); //toDo
         train.setState(new ServiceState(train, path, station));
         return train.getState().process();
     }

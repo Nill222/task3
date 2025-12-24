@@ -18,6 +18,10 @@ public class StationPath {
         lock.unlock();
     }
 
+    public boolean tryLock() {
+        return lock.tryLock();
+    }
+
     @Override
     public String toString() {
         return "Path number" + id;
